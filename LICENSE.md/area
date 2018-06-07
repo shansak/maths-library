@@ -1,0 +1,18 @@
+from math import sqrt
+def distance(x1,x2,y1,y2):
+   dx=(x2-x1)**2
+   dy=(y2-y1)**2
+   dz=(dx+dy)
+   
+   result=sqrt(dz)
+   return result
+def area(radius):
+    temp=3.14*radius**2
+    return temp
+def circle_area(x1,x2,y1,y2):
+    radius=distance(x1,x2,y1,y2)
+    result=area(radius)
+    return result
+    
+g=circle_area(3,7,9,11)
+print("area",g)
